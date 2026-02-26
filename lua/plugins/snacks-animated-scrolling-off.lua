@@ -1,8 +1,15 @@
 return {
-	"folke/snacks.nvim",
-	opts = {
-		scroll = {
-			enabled = false, -- Disable scrolling animations
-		},
-	},
+  "folke/snacks.nvim",
+  opts = {
+    scroll = {
+      enabled = false, -- Disable scrolling animations
+    },
+    terminal = {
+      win = {
+        position = "float",
+        height = 0,
+        width = 0,
+      },
+    },
+  },
 }

@@ -43,3 +43,8 @@ vim.api.nvim_set_hl(0, "NotifyERRORBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "NotifyWARNBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "NotifyTRACEBorder", { bg = "none" })
 vim.api.nvim_set_hl(0, "NotifyDEBUGBorder", { bg = "none" })
+
+-- match VS Code selection colors
+vim.api.nvim_set_hl(0, "Visual", { bg = "#0e902c", fg = "#ffffff" })
+vim.api.nvim_set_hl(0, "Search", { bg = "#d4edda", fg = "#ffffff" })
+vim.api.nvim_set_hl(0, "CurSearch", { bg = "#0e902c", fg = "#ffffff" })
