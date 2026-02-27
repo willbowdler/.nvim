@@ -3,3 +3,4 @@ WRN 2026-02-26T13:53:16.255 ?.17324    server_start:193: Failed to start server:
 WRN 2026-02-26T13:53:28.759 ?.17416    server_start:193: Failed to start server: operation not permitted: /var/folders/nv/4w0hzj657mvbbc4024_8s68c0000gn/T/nvim.willbowdler/bwYlPq/nvim.17416.0
 WRN 2026-02-26T14:41:25.998 c/nvim.42576.0 server_start:193: Failed to start server: operation not permitted: /var/folders/nv/4w0hzj657mvbbc4024_8s68c0000gn/T/nvim.willbowdler/zqWHIX/nvim.44768.0
 WRN 2026-02-26T14:41:29.915 c/nvim.42576.0 server_start:193: Failed to start server: operation not permitted: /var/folders/nv/4w0hzj657mvbbc4024_8s68c0000gn/T/nvim.willbowdler/eB1RT3/nvim.44794.0
+WRN 2026-02-26T15:08:40.745 c/nvim.52878.0 server_start:193: Failed to start server: operation not permitted: /var/folders/nv/4w0hzj657mvbbc4024_8s68c0000gn/T/nvim.willbowdler/QXxs2A/nvim.56429.0
