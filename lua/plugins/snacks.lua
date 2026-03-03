@@ -15,12 +15,14 @@ return {
       sources = {
         explorer = {
           hidden = true,
+          ignored = true,
         },
         files = {
           hidden = true,
         },
         grep = {
           hidden = true,
+          regex = false,
         },
       },
     },
