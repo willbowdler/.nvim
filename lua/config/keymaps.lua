@@ -24,12 +24,16 @@ vim.keymap.set("n", "<leader>dd", function()
     dap.run({
       type = "python",
       request = "attach",
-      name = "Attach ConsignCloud Public API",
+      name = "Attach to consigncloud-api (debugpy)",
+      redirectOutput = true,
       connect = { host = "127.0.0.1", port = 5678 },
       justMyCode = false,
     })
   end
 end, { desc = "Debug Toggle" })
+vim.keymap.set("n", "<leader>dl", function()
+  require("dap").continue()
+end, { desc = "Debug Continue" })
 vim.keymap.set("n", "<leader>dh", function()
   require("dap").step_over()
 end, { desc = "Debug Step Over" })
@@ -42,6 +46,13 @@ end, { desc = "Debug Step Out" })
 vim.keymap.set("n", "<leader>db", function()
   require("dap").toggle_breakpoint()
 end, { desc = "Debug Toggle Breakpoint" })
+vim.keymap.set("n", "<leader>dB", function()
+  require("dap").clear_breakpoints()
+end, { desc = "Debug Clear Breakpoints" })
+vim.keymap.set("n", "<leader>dr", function()
+  require("dap").repl.open()
+end, { desc = "Debug Open REPL" })
+vim.keymap.set("n", "<leader>dv", "<cmd>DapViewToggle<cr>", { desc = "Debug View Toggle" })
 
 -- Terminal
 vim.keymap.set("n", "<leader>t", function()

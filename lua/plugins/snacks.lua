@@ -19,10 +19,14 @@ return {
         },
         files = {
           hidden = true,
+          ignored = true,
+          exclude = { "**/node_modules/**", "**/dist/**" },
         },
         grep = {
           hidden = true,
+          ignored = true,
           regex = false,
+          exclude = { "**/node_modules/**", "**/dist/**" },
         },
       },
     },
