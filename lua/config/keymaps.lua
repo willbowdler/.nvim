@@ -56,8 +56,14 @@ vim.keymap.set("n", "<leader>dv", "<cmd>DapViewToggle<cr>", { desc = "Debug View
 
 -- Terminal
 vim.keymap.set("n", "<leader>t", function()
-  Snacks.terminal(nil, { cwd = LazyVim.root() })
+  Snacks.terminal(nil, { cwd = vim.uv.cwd() })
 end, { desc = "Terminal (Root Dir)" })
+vim.keymap.set({ "n", "t" }, "<c-/>", function()
+  Snacks.terminal.focus(nil, { cwd = vim.uv.cwd() })
+end, { desc = "Terminal (Root Dir)" })
+vim.keymap.set({ "n", "t" }, "<c-_>", function()
+  Snacks.terminal.focus(nil, { cwd = LazyVim.root() })
+end, { desc = "which_key_ignore" })
 
 -- File path / projects
 vim.keymap.set("n", "<leader>fp", function()
