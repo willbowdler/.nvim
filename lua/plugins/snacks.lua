@@ -16,6 +16,8 @@ return {
         explorer = {
           hidden = true,
           ignored = true,
+          auto_close = true,
+          jump = { close = true },
           win = {
             list = {
               wo = {
@@ -25,8 +27,7 @@ return {
             },
           },
           layout = {
-            preset = "sidebar",
-            fullscreen = true,
+            preset = "default",
             preview = false,
             hidden = { "input" },
           },
