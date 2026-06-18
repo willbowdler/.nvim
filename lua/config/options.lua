@@ -5,3 +5,7 @@ vim.opt.swapfile = false
 vim.opt.ma = true
 vim.opt.spell = true
 vim.opt.spelllang = "en_us"
+vim.opt.fillchars:append({ fold = " " })
+
+-- Prefer the repo root over language-server package roots in monorepos.
+vim.g.root_spec = { { ".git" }, "cwd" }

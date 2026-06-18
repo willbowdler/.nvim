@@ -75,3 +75,15 @@ end, { desc = "Copy Relative Path" })
 vim.keymap.set("n", "<leader>fP", function()
   Snacks.picker.projects()
 end, { desc = "Projects" })
+
+vim.keymap.set("n", "<leader>fA", function()
+  Snacks.picker.files({ hidden = true, ignored = true })
+end, { desc = "Find All Files" })
+
+vim.keymap.set("n", "<leader>sA", function()
+  Snacks.picker.grep({ hidden = true, ignored = true })
+end, { desc = "Grep All Files" })
+
+-- Marks
+vim.keymap.set("n", "<leader>md", "<cmd>delmarks!<cr>", { desc = "Delete Buffer Marks" })
+vim.keymap.set("n", "<leader>mD", "<cmd>delmarks a-z<cr>", { desc = "Delete Global Marks" })

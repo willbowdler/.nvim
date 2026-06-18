@@ -16,17 +16,31 @@ return {
         explorer = {
           hidden = true,
           ignored = true,
+          win = {
+            list = {
+              wo = {
+                number = true,
+                relativenumber = true,
+              },
+            },
+          },
+          layout = {
+            preset = "sidebar",
+            fullscreen = true,
+            preview = false,
+            hidden = { "input" },
+          },
         },
         files = {
-          hidden = true,
-          ignored = true,
-          exclude = { "**/node_modules/**", "**/dist/**" },
+          hidden = false,
+          ignored = false,
+          exclude = { "**/node_modules/**", "**/dist/**", "**/__pycache__/**", "**/*.pyc" },
         },
         grep = {
-          hidden = true,
-          ignored = true,
+          hidden = false,
+          ignored = false,
           regex = false,
-          exclude = { "**/node_modules/**", "**/dist/**" },
+          exclude = { "**/node_modules/**", "**/dist/**", "**/__pycache__/**", "**/*.pyc" },
         },
       },
     },
